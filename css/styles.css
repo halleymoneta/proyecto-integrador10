@@ -2,9 +2,9 @@ body {
     margin: 0;
     font-family: 'Special Gothic Expanded One', sans-serif;
     background-color: #2c2c2c;
-  }
-  
-  header {
+}
+
+header {
     background-color: #111;
     color: white;
     padding: 20px;
@@ -14,56 +14,56 @@ body {
     justify-content: space-between;
     gap: 20px;
     font-family: Arial, Helvetica, sans-serif;
-  }
-  
+}
+
 .logo {
     font-size: 28px;
     font-weight: bold;
     margin: 0;
     font-family: 'Special Gothic Expanded One', sans-serif;
     text-transform: none;
-    color:#e50914
+    color: #e50914;
 }
-  
-  nav ul {
+
+nav ul {
     list-style: none;
     display: flex;
     gap: 15px;
     padding: 0;
     margin: 0;
-  }
-  
-  nav a {
+}
+
+nav a {
     color: white;
     text-decoration: none;
     font-weight: bold;
-  }
-  
-  nav a:hover {
+}
+
+nav a:hover {
     text-decoration: underline;
-  }
-  
-  form {
+}
+
+form {
     display: flex;
     gap: 5px;
-  }
-  
-  input[type="text"] {
+}
+
+input[type="text"] {
     padding: 6px;
     border-radius: 4px;
     border: none;
-  }
-  
-  button {
+}
+
+button {
     padding: 6px 12px;
     background-color: #e50914;
     color: white;
     border: none;
     border-radius: 4px;
     cursor: pointer;
-  }
-  
-  footer {
+}
+
+footer {
     background-color: #111;
     color: white;
     text-align: center;
@@ -71,28 +71,31 @@ body {
     margin-top: 40px;
     font-family: Arial, Helvetica, sans-serif;
     font-size: small;
-  }
-  main {
+}
+
+main {
     padding: 20px;
-  }
-  
-  section {
+}
+
+section {
     margin-bottom: 40px;
-  }
-  
-  section h2 {
+}
+
+section h2 {
     color: white;
     font-family: Arial, sans-serif;
     margin-bottom: 15px;
-  }
-  
-  .contenedor {
+}
+
+.contenedor {
     display: flex;
-    gap: 15px;
     flex-wrap: wrap;
-  }
-  
-  .contenedor a {
+    gap: 15px;
+    justify-content: center;
+    margin-bottom: 40px;
+}
+
+.contenedor a {
     background-color: #1c1c1c;
     padding: 10px;
     border-radius: 5px;
@@ -100,45 +103,37 @@ body {
     color: white;
     width: 150px;
     text-align: center;
-  }
-  
-  .contenedor img {
+}
+
+.contenedor img {
     width: 100%;
     border-radius: 5px;
-  }
-  .contenedor {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 20px;
-    justify-content: center;
-    margin-bottom: 40px;
-  }
-  
-  .foto {
-    width: 160px;
+}
+
+.foto {
+    width: 140px;
     background-color: #1c1c1c;
     padding: 10px;
     border-radius: 8px;
     text-align: center;
     text-decoration: none;
-  }
-  
-  .foto img {
+}
+
+.foto img {
     width: 100%;
     height: 240px;
     object-fit: cover;
     border-radius: 4px;
-  }
-  
-  .foto .titulo {
+}
+
+.foto .titulo {
     font-weight: bold;
     color: white;
     margin-top: 10px;
     min-height: 40px;
-  }
-  
-  .foto .fecha {
+}
+
+.foto .fecha {
     color: #ccc;
     margin: 0;
-  }
-  
+}
