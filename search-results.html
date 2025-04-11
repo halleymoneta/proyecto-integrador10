@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Detalle de Película</title>
+  <title>Resultados de Búsqueda</title>
   <link href="css/styles.css" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css2?family=Special+Gothic+Expanded+One&display=swap" rel="stylesheet">
 </head>
@@ -26,16 +26,25 @@
   </header>
 
   <main>
-    <section class="detalle">
-      <img src="img/peli1.jpg" alt="Portada película">
-      <div class="info-detalle">
-        <h2 class="titulo-detalle">Una Película de Minecraft</h2>
-        <p>Calificación: 6.0/10</p>
-        <p>Fecha de estreno: 2025</p>
-        <p>Duración: 1h 41min</p>
-        <p>Sinopsis: El malvado dragón de Ender está en su camino a la destrucción, haciendo que una chica joven y su grupo de aventureros amigos intenten salvar Overworld.</p>
-        <p>Género: <a href="detail-genres.html">Aventura</a></p>
+    <section>
+      <h2>Resultados para: "Minecraft"</h2>
+      <div class="contenedor">
+        <a href="detail-movie.html" class="foto">
+          <img src="img/peli1.jpg" alt="Minecraft">
+          <p class="titulo">Una Película de Minecraft</p>
+          <p class="fecha">2025</p>
+        </a>
+        <a href="detail-serie.html" class="foto">
+          <img src="img/serie2.jpg" alt="Adolescencia">
+          <p class="titulo">Adolescencia</p>
+          <p class="fecha">2025</p>
+        </a>
       </div>
+    </section>
+
+    <section>
+      <h2>Resultados para: "No hay resultados"</h2>
+      <p class="resultado-nulo">No se encontraron resultados para tu búsqueda.</p>
     </section>
   </main>
 

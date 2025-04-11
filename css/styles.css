@@ -5,32 +5,34 @@ body {
   }
   
   header {
-    background-color: #111;
+    background-color: #1a1a1a;
     color: white;
     padding: 20px;
     display: flex;
     flex-wrap: wrap;
     align-items: center;
     justify-content: space-between;
-    gap: 20px;
     font-family: Arial, Helvetica, sans-serif;
   }
   
-.logo {
+  .logo {
     font-size: 28px;
     font-weight: bold;
     margin: 0;
     font-family: 'Special Gothic Expanded One', sans-serif;
     text-transform: none;
-    color:#e50914
-}
+    color: #ee3d3d;
+  }
   
   nav ul {
     list-style: none;
     display: flex;
-    gap: 15px;
     padding: 0;
     margin: 0;
+  }
+  
+  nav ul li {
+    margin: 0 7.5px;
   }
   
   nav a {
@@ -45,18 +47,21 @@ body {
   
   form {
     display: flex;
-    gap: 5px;
   }
   
-  input[type="text"] {
+  form * {
+    margin: 0 2.5px;
+  }
+  
+header form input {
     padding: 6px;
     border-radius: 4px;
     border: none;
-  }
+}
   
   button {
     padding: 6px 12px;
-    background-color: #e50914;
+    background-color: #ee3d3d;
     color: white;
     border: none;
     border-radius: 4px;
@@ -90,7 +95,6 @@ body {
   .contenedor {
     display: flex;
     flex-wrap: wrap;
-    gap: 15px;
     justify-content: center;
     margin-bottom: 40px;
   }
@@ -105,13 +109,13 @@ body {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    height: 340px;
+    height: 320px;
+    margin: 10px;
   }
   
   .foto img {
     width: 100%;
     height: 240px;
-    object-fit: cover;
     border-radius: 4px;
   }
   
@@ -126,44 +130,45 @@ body {
     color: #ccc;
     margin: 0;
   }
-
+  
   .detalle {
     display: flex;
     flex-wrap: wrap;
-    gap: 20px;
     align-items: flex-start;
     margin-bottom: 40px;
     background-color: #1c1c1c;
     padding: 20px;
     border-radius: 8px;
   }
-
+  
   .detalle img {
     width: 300px;
     border-radius: 8px;
   }
+  
   .titulo-detalle {
     font-size: 45px;
     font-weight: bold;
-    color: #e50914;
-  }  
-
+    color: #ee3d3d;
+  }
+  
   .info-detalle {
     color: white;
     font-family: Arial, sans-serif;
     display: flex;
     flex-direction: column;
-    gap: 10px;
+    margin-left: 20px;
   }
-
+  
   .info-detalle a {
-    color: #e50914;
+    color: #ee3d3d;
     text-decoration: none;
   }
-
+  
   .info-detalle a:hover {
     text-decoration: underline;
   }
+  
   .foto-genero {
     width: 18%;
     height: 200px;
@@ -177,13 +182,230 @@ body {
     align-items: center;
     justify-content: center;
     text-align: center;
-    font-size: 30px
+    font-size: 30px;
+    margin: 5px;
   }
+  
   .contenedor-generos {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
-    gap: 10px;
     margin-bottom: 40px;
+  }
+  
+  .centrado-login {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 70vh;
+  }
+  
+  .formulario-login {
+    display: flex;
+    flex-direction: column;
+    background-color: #1a1a1a;
+    padding: 30px;
+    border-radius: 8px;
+    color: white;
+    font-family: Arial, sans-serif;
+    width: 300px;
+  }
+  
+  .formulario-login input {
+    margin-bottom: 10px;
+  }
+  .formulario-login button {
+    margin-bottom: 10px;
+  }
+
+  .formulario-login a {
+    margin-bottom: 10px;
+  }
+  
+  .formulario-login input {
+    padding: 8px;
+    border: none;
+    border-radius: 4px;
+  }
+  
+  .formulario-login button {
+    padding: 10px;
+    background-color: #ee3d3d;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+  
+  .formulario-login a {
+    color: #ee3d3d;
+    text-decoration: none;
+    font-size: medium;
+    text-align: center;
+  }
+  
+  .formulario-login a:hover {
+    text-decoration: underline;
+  }
+  
+  .formulario-login h2 {
+    text-align: center;
+    color: #ee3d3d;
+  }
+  
+  .formulario-centrado {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 80vh;
+  }
+  
+  .formulario {
+    background-color: #1a1a1a;
+    padding: 30px;
+    border-radius: 10px;
+    width: 300px;
+    display: flex;
+    flex-direction: column;
+    color: white;
+    font-family: Arial, sans-serif;
+  }
+  
+  .formulario input {
+    margin-bottom: 10px;
+  }
+  .formulario button {
+    margin-bottom: 10px;
+  }
+  .formulario .link-formulario {
+    margin-bottom: 10px;
+  }
+  
+  .formulario h2 {
+    text-align: center;
+    color: #ee3d3d;
+    margin-bottom: 10px;
+  }
+  
+.formulario input,
+form input {
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+}
+
+.formulario-login input {
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+}
+  
+  .formulario button {
+    padding: 10px;
+    background-color: #ee3d3d;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+.formulario .link-formulario {
+    text-align: center;
+    color: #ee3d3d;
+    text-decoration: none;
+    font-size: medium;
+    margin-top: 5px;
+}
+
+.formulario .link-formulario:hover {
+    text-decoration: underline;
+}
+  
+  .checkbox {
+    display: flex;
+    align-items: top;
+    font-size: 14px;
+  }
+  
+  .checkbox input {
+    margin-right: 8px;
+  }
+  
+  .resultado-nulo {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 15px;
+    color: #ccc;
+  }
+  
+  .logo-img {
+    height: 50px;
+  }
+  
+  .logo-formulario {
+    width: 240px;
+    margin: 0 auto 10px;
+    display: block;
+  }
+  
+  @media (max-width: 600px) {
+    header {
+        flex-direction: column;
+        align-items: center;
+      }
+
+    nav ul {
+        flex-direction: column;
+        align-items: center;
+      }
+
+    form {
+      flex-direction: column;
+      align-items: center;
+    }
+  
+    nav ul li {
+      margin: 5px 0;
+    }
+  
+    .logo-img {
+      height: 40px;
+    }
+  
+    .contenedor {
+        justify-content: center;
+    }
+    
+
+    .contenedor-generos {
+      justify-content: center;
+    }
+  
+    .foto
+    {
+      width: 100%;
+      max-width: 300px;
+    }
+    .foto-genero {
+      width: 100%;
+      max-width: 300px;
+    }
+  
+    .detalle {
+      flex-direction: column;
+      align-items: center;
+    }
+  
+    .detalle img {
+      width: 100%;
+      max-width: 300px;
+    }
+  
+    .formulario {
+        width: 90%;
+      }
+
+    .formulario-login {
+      width: 90%;
+    }
   }
   

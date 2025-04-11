@@ -1,35 +1,97 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>PeliSpot</title>
-    <link href="css/styles.css" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Special+Gothic+Expanded+One&display=swap" rel="stylesheet">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contenido de Aventura</title>
+  <link href="css/styles.css" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Special+Gothic+Expanded+One&display=swap" rel="stylesheet">
 </head>
+
 <body>
-    <header>
-        <h1 class="logo">PeliSpot</h1>
-        <nav>
-            <ul>
-              <li><a href="index.html">Home</a></li>
-              <li><a href="moviegenres.html">Películas</a></li>
-              <li><a href="seriesgenres.html">Series</a></li>
-              <li><a href="login.html">Login</a></li>
-              <li><a href="register.html">Registro</a></li>
-            </ul>
-          </nav>
-          <form action="search-results.html">
-            <input type="text" placeholder="Buscar..." name="query">
-            <button type="submit">Buscar</button>
-          </form>      
-    </header>
+  <header>
+    <a href="index.html"><img src="img/logo.png" alt="PeliSpot Logo" class="logo-img"></a>
+    <nav>
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="moviegenres.html">Películas</a></li>
+        <li><a href="seriesgenres.html">Series</a></li>
+        <li><a href="login.html">Login</a></li>
+        <li><a href="register.html">Registro</a></li>
+      </ul>
+    </nav>
+    <form action="search-results.html">
+      <input type="text" placeholder="Buscar..." name="query">
+      <button type="submit">Buscar</button>
+    </form>
+  </header>
 
+  <main>
+    <section>
+      <h2>Películas de Aventura</h2>
+      <div class="contenedor">
+        <a href="detail-movie.html" class="foto">
+          <img src="img/peli1.jpg" alt="Minecraft">
+          <p class="titulo">Una Película de Minecraft</p>
+          <p class="fecha">2025</p>
+        </a>
+        <a href="detail-movie.html" class="foto">
+          <img src="img/peli2.jpg" alt="Blanca Nieves">
+          <p class="titulo">Blanca Nieves</p>
+          <p class="fecha">2025</p>
+        </a>
+        <a href="detail-movie.html" class="foto">
+          <img src="img/peli3.jpg" alt="Mufasa">
+          <p class="titulo">Mufasa: El rey león</p>
+          <p class="fecha">2024</p>
+        </a>
+        <a href="detail-movie.html" class="foto">
+          <img src="img/peli4.jpg" alt="Un completo desconocido">
+          <p class="titulo">Un completo desconocido</p>
+          <p class="fecha">2024</p>
+        </a>
+        <a href="detail-movie.html" class="foto">
+          <img src="img/peli5.jpg" alt="El mono">
+          <p class="titulo">El mono</p>
+          <p class="fecha">2025</p>
+        </a>
+      </div>
+    </section>
 
-    
-    <footer>
-        <p>Proyecto hecho por Halley Moneta y Agustin Fischer — Programación 1</p>
-    </footer>
-      
+    <section>
+      <h2>Series de Aventura</h2>
+      <div class="contenedor">
+        <a href="detail-serie.html" class="foto">
+          <img src="img/serie1.jpg" alt="Serie 1">
+          <p class="titulo">The White Lotus</p>
+          <p class="fecha">2021</p>
+        </a>
+        <a href="detail-serie.html" class="foto">
+          <img src="img/serie2.jpg" alt="Serie 2">
+          <p class="titulo">Adolescencia</p>
+          <p class="fecha">2025</p>
+        </a>
+        <a href="detail-serie.html" class="foto">
+          <img src="img/serie3.jpg" alt="Serie 3">
+          <p class="titulo">MobLand</p>
+          <p class="fecha">2025</p>
+        </a>
+        <a href="detail-serie.html" class="foto">
+          <img src="img/serie4.jpg" alt="Serie 4">
+          <p class="titulo">Severance</p>
+          <p class="fecha">2022</p>
+        </a>
+        <a href="detail-serie.html" class="foto">
+          <img src="img/serie5.jpg" alt="Serie 5">
+          <p class="titulo">Daredvil: Born Again</p>
+          <p class="fecha">2025</p>
+        </a>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <p>Proyecto hecho por Halley Moneta y Agustin Fischer — TDFE (Tecnología de Desarrollo Front End)</p>
+  </footer>
 </body>
 </html>
