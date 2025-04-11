@@ -1,35 +1,45 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>PeliSpot</title>
-    <link href="css/styles.css" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Special+Gothic+Expanded+One&display=swap" rel="stylesheet">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Detalle de Serie</title>
+  <link href="css/styles.css" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Special+Gothic+Expanded+One&display=swap" rel="stylesheet">
 </head>
 <body>
-    <header>
-        <h1 class="logo">PeliSpot</h1>
-        <nav>
-            <ul>
-              <li><a href="index.html">Home</a></li>
-              <li><a href="moviegenres.html">Películas</a></li>
-              <li><a href="seriesgenres.html">Series</a></li>
-              <li><a href="login.html">Login</a></li>
-              <li><a href="register.html">Registro</a></li>
-            </ul>
-          </nav>
-          <form action="search-results.html">
-            <input type="text" placeholder="Buscar..." name="query">
-            <button type="submit">Buscar</button>
-          </form>      
-    </header>
+  <header>
+    <h1 class="logo">PeliSpot</h1>
+    <nav>
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="moviegenres.html">Películas</a></li>
+        <li><a href="seriesgenres.html">Series</a></li>
+        <li><a href="login.html">Login</a></li>
+        <li><a href="register.html">Registro</a></li>
+      </ul>
+    </nav>
+    <form action="search-results.html">
+      <input type="text" placeholder="Buscar..." name="query">
+      <button type="submit">Buscar</button>
+    </form>
+  </header>
 
+  <main>
+    <section class="detalle">
+      <img src="img/serie1.jpg" alt="Portada serie">
+      <div class="info-detalle">
+        <h2 class="titulo-detalle">The White Lotus</h2>
+        <p>Calificación: 8.0/10</p>
+        <p>Fecha de estreno: 2021</p>
+        <p>Sinopsis: Sigue las vivencias de varios huéspedes y empleados durante su estadía en un centro turístico tropical a lo largo de una semana.</p>
+        <p>Género: <a href="detail-genres.html">Drama</a></p>
+      </div>
+    </section>
+  </main>
 
-    
-    <footer>
-        <p>Proyecto hecho por Halley Moneta y Agustin Fischer — Programación 1</p>
-    </footer>
-      
+  <footer>
+    <p>Proyecto hecho por Halley Moneta y Agustin Fischer — TDFE (Tecnología de Desarrollo Front End)</p>
+  </footer>
 </body>
 </html>

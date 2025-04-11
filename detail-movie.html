@@ -1,35 +1,46 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>PeliSpot</title>
-    <link href="css/styles.css" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Special+Gothic+Expanded+One&display=swap" rel="stylesheet">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Detalle de Película</title>
+  <link href="css/styles.css" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Special+Gothic+Expanded+One&display=swap" rel="stylesheet">
 </head>
 <body>
-    <header>
-        <h1 class="logo">PeliSpot</h1>
-        <nav>
-            <ul>
-              <li><a href="index.html">Home</a></li>
-              <li><a href="moviegenres.html">Películas</a></li>
-              <li><a href="seriesgenres.html">Series</a></li>
-              <li><a href="login.html">Login</a></li>
-              <li><a href="register.html">Registro</a></li>
-            </ul>
-          </nav>
-          <form action="search-results.html">
-            <input type="text" placeholder="Buscar..." name="query">
-            <button type="submit">Buscar</button>
-          </form>      
-    </header>
+  <header>
+    <h1 class="logo">PeliSpot</h1>
+    <nav>
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="moviegenres.html">Películas</a></li>
+        <li><a href="seriesgenres.html">Series</a></li>
+        <li><a href="login.html">Login</a></li>
+        <li><a href="register.html">Registro</a></li>
+      </ul>
+    </nav>
+    <form action="search-results.html">
+      <input type="text" placeholder="Buscar..." name="query">
+      <button type="submit">Buscar</button>
+    </form>
+  </header>
 
+  <main>
+    <section class="detalle">
+      <img src="img/peli1.jpg" alt="Portada película">
+      <div class="info-detalle">
+        <h2 class="titulo-detalle">Una Película de Minecraft</h2>
+        <p>Calificación: 6.0/10</p>
+        <p>Fecha de estreno: 2025</p>
+        <p>Duración: 1h 41min</p>
+        <p>Sinopsis: El malvado dragón de Ender está en su camino a la destrucción, haciendo que una chica joven y su grupo de aventureros amigos intenten salvar Overworld.</p>
+        <p>Género: <a href="detail-genres.html">Aventura</a></p>
+      </div>
+    </section>
+  </main>
 
-    
-    <footer>
-        <p>Proyecto hecho por Halley Moneta y Agustin Fischer — Programación 1</p>
-    </footer>
-      
+  <footer>
+    <p>Proyecto hecho por Halley Moneta y Agustin Fischer — TDFE (Tecnología de Desarrollo Front End)</p>
+  </footer>
 </body>
 </html>
