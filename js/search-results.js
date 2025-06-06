@@ -47,5 +47,7 @@ fetch(url)
     contenedor.innerHTML = contenido;
   })
   .catch(function(error) {
-    console.log("Error: " + error);
-  });
+  document.querySelector(".resultados-busqueda").innerHTML =
+    "<p class='resultado-nulo'>Hubo un error al cargar los resultados.</p>";
+});
+
