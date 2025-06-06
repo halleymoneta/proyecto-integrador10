@@ -5,3 +5,12 @@ fetch(url)
   .then(function(res) {
     return res.json();
   })
+  .then(function(data) {
+    let contenedor = document.querySelector(".contenedor-generos");
+    for (let i = 0; i < data.genres.length; i++) {
+      let genero = data.genres[i];
+      contenedor.innerHTML += `
+        <a href="detail-genres.html?id=${genero.id}&type=tv" class="foto-genero">${genero.name}</a>
+      `;
+    }
+  })
