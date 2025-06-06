@@ -346,6 +346,41 @@ form input {
     margin: 0 auto 10px;
     display: block;
   }
+
+  .resultados-genero {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+  margin-top: 20px;
+}
+
+.resultados-genero article {
+  width: 140px;
+  background-color: #1c1c1c;
+  padding: 10px;
+  border-radius: 8px;
+  text-align: center;
+  text-decoration: none;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 320px;
+}
+
+.resultados-genero article img {
+  width: 100%;
+  height: 240px;
+  border-radius: 4px;
+}
+
+.resultados-genero article h3 {
+  font-weight: bold;
+  color: white;
+  margin-top: 10px;
+  min-height: 40px;
+  font-size: 0.95rem;
+}
   
   @media (max-width: 600px) {
     header {
