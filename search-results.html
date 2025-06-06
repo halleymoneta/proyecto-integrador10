@@ -19,10 +19,18 @@
         <li><a href="register.html">Registro</a></li>
       </ul>
     </nav>
-    <form action="search-results.html">
-      <input type="text" placeholder="Buscar..." name="query">
+    <form action="search-results.html" method="get">
+      <input type="text" placeholder="Buscar..." name="query" required>
+      
+      <label>
+        <input type="radio" name="type" value="movie" checked> Películas
+      </label>
+      <label>
+        <input type="radio" name="type" value="tv"> Series
+      </label>
+    
       <button type="submit">Buscar</button>
-    </form>
+    </form> 
   </header>
 
   <main>
@@ -51,5 +59,6 @@
   <footer>
     <p>Proyecto hecho por Halley Moneta y Agustin Fischer — TDFE (Tecnología de Desarrollo Front End)</p>
   </footer>
+  <script src="js/search-results.js"></script>
 </body>
 </html>

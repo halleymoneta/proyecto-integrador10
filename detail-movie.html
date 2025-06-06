@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
-  <meta charset="UTF-8">
+   
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Detalle de Película</title>
   <link href="css/styles.css" rel="stylesheet">
@@ -19,22 +19,30 @@
         <li><a href="register.html">Registro</a></li>
       </ul>
     </nav>
-    <form action="search-results.html">
-      <input type="text" placeholder="Buscar..." name="query">
+    <form action="search-results.html" method="get">
+      <input type="text" placeholder="Buscar..." name="query" required>
+      
+      <label>
+        <input type="radio" name="type" value="movie" checked> Películas
+      </label>
+      <label>
+        <input type="radio" name="type" value="tv"> Series
+      </label>
+    
       <button type="submit">Buscar</button>
-    </form>
+    </form>    
   </header>
 
   <main>
     <section class="detalle">
-      <img src="img/peli1.jpg" alt="Portada película">
+      <img id="imagen" src="" alt="Portada película">
       <div class="info-detalle">
-        <h2 class="titulo-detalle">Una Película de Minecraft</h2>
-        <p>Calificación: 6.0/10</p>
-        <p>Fecha de estreno: 2025</p>
-        <p>Duración: 1h 41min</p>
-        <p>Sinopsis: El malvado dragón de Ender está en su camino a la destrucción, haciendo que una chica joven y su grupo de aventureros amigos intenten salvar Overworld.</p>
-        <p>Género: <a href="detail-genres.html">Aventura</a></p>
+        <h2 id="titulo" class="titulo-detalle"></h2>
+        <p id="calificacion"></p>
+        <p id="estreno"></p>
+        <p id="duracion"></p>
+        <p id="sinopsis"></p>
+        <p id="generos"></p>
       </div>
     </section>
   </main>
@@ -42,5 +50,6 @@
   <footer>
     <p>Proyecto hecho por Halley Moneta y Agustin Fischer — TDFE (Tecnología de Desarrollo Front End)</p>
   </footer>
+  <script src="js/detail-movie.js"></script>
 </body>
 </html>
